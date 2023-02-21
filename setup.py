@@ -136,14 +136,14 @@ with open('requirements.txt') as f:
     install_requires = f.read().splitlines()
 
 setup(
-    name='pygit2',
+    name='pygit2-noteable',
     description='Python bindings for libgit2.',
     keywords='git',
     version=__version__,
     classifiers=classifiers,
     license='GPLv2 with linking exception',
-    maintainer='J. David Ibáñez',
-    maintainer_email='jdavid.ibp@gmail.com',
+    maintainer='Noteable (extending from J. David Ibáñez)',
+    maintainer_email='engineering@noteable.io',
     long_description=long_description,
     packages=['pygit2'],
     package_data={'pygit2': ['decl/*.h', '*.pyi']},
@@ -156,7 +156,7 @@ setup(
     setup_requires=['cffi>=1.9.1'],
     install_requires=install_requires,
     # URLs
-    url='https://github.com/libgit2/pygit2',
+    url='https://github.com/noteable-io/pygit2',
     project_urls={
         'Documentation': 'https://www.pygit2.org/',
         'Changelog': 'https://github.com/libgit2/pygit2/blob/master/CHANGELOG.rst',
